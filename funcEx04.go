@@ -4,18 +4,18 @@ import "fmt"
 
 func main() {
 
-	var a int
-	fmt.Scan(&a)
+	var valor_fatorial int64
+	fmt.Scan(&valor_fatorial)
 
-	fmt.Print(fatorial(a))
+	fmt.Print(fatorial(valor_fatorial), "\n")
 
 }
 
-func fatorial(a int) int {
+func fatorial(numero int64) int64 {
 
-	for i := a - 1; i != 0; i-- {
-		a *= i
+	for i := numero - 1; i != 0; i-- {
+		numero *= i
 	}
-	return a
+	return numero
 
 }
