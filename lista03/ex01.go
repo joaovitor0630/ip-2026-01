@@ -1,21 +1,11 @@
 package main
-
 import "fmt"
-
 func main() {
-
-	var x, n int
-
-	fmt.Scan(&x, &n)
-	fmt.Print(pet(x, n))
-
-}
-
-func pet(n, y int) int {
-
-	if y == 0 {
-		return 1
+	var base, exp int
+	fmt.Scan(&base, &exp)
+	res := 1
+	for i := 0; i < exp; i++ {
+		res *= base
 	}
-
-	return n * pet(n, y-1)
+	fmt.Println(res)
 }
