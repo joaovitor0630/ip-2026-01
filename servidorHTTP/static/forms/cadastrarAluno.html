@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Aluno</title>
+    <link rel="stylesheet" href="../styles/cadastrarAluno.style.css">
+</head>
+
+<body>
+    <div id="container">
+        <h3>Cadastrar Novo Aluno</h3>
+        <form method="POST" action="/cadastrar">
+            <div>
+                <label>Nome:</label>
+                <input name="nome" placeholder="Digite o nome do aluno" value="" type="text" required>
+            </div>
+            <div>
+                <label>E-mail:</label>
+                <input name="email" placeholder="Digite o e-mail do aluno" value="" type="email" required>
+            </div>
+            <div>
+                <label>Curso:</label>
+                <input name="curso" placeholder="Digite o curso do aluno" value="" type="text" required>
+            </div>
+            <div>
+                <label>Matrícula:</label>
+                <input name="matricula" placeholder="Digite a matrícula do aluno" value="" type="text" required>
+            </div>
+
+            <button type="submit"><span>Cadastrar</span></button>
+        </form>
+    </div>
+
+</body>
+
+</html>

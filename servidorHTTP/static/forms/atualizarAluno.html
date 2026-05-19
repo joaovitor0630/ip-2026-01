@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atualizar Aluno</title>
+    <link rel="stylesheet" href="../styles/atualizarAluno.style.css">
+</head>
+
+<body>
+    <div id="container">
+        <h3>Atualizar Dados do Aluno</h3>
+        <form method="POST" action="/atualizar">
+            <div>
+                <label>Nome:</label>
+                <input name="nome" placeholder="Digite o novo nome (opcional)" type="text">
+            </div>
+            <div>
+                <label>E-mail:</label>
+                <input name="email" placeholder="Digite o novo e-mail (opcional)" type="email">
+            </div>
+            <div>
+                <label>Curso:</label>
+                <input name="curso" placeholder="Digite o novo curso (opcional)" type="text">
+            </div>
+            <div>
+                <label>Nova Matrícula:</label>
+                <input name="novaMatricula" placeholder="Digite a nova matrícula (opcional)" type="text">
+            </div>
+            <div>
+                <label>Matrícula Atual:</label>
+                <input name="matriculaAtual" placeholder="Digite a matrícula atual do aluno" type="text" required>
+            </div>
+            <button type="submit"><span>Atualizar</span></button>
+        </form>
+    </div>
+</body>
+
+</html>
